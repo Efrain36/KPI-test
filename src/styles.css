@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: black;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: white;
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 54px;
+    color: green;
+    box-shadow: 0px 2px 15px grey;
+
+    img {
+        width: auto;
+        height: 36px;
+        margin-right: 12px;
+    }
+
+    .navbar-title {
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+
+        span {
+            display: flex;
+        }
+    }
+
+    .navbar-menu {
+        display: flex;
+    }
+
+}
+
+.container {
+
+    background-image: url('../assets/background.png');
+    background-size: cover;
+    padding: 20px;
+    height: 870px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.subtitle-container {
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+    width: 500px;
+    margin: 4px 0 24px 0;
+}
+
+.text-body {
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.sub-container {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+
+    h2 {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        margin-top: 0;
+
+        span {
+            margin-right: 12px;
+        }
+    }
+}
+
+.list-container {
+    display: flex;
+}
+
+.benefits {
+    list-style-type: none;
+    width: 62%;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    li {
+        padding-bottom: 14px;
+
+        span {
+            color: green;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}
+
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.form-container {
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 4px grey;
+
+    input,
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .phone-container {
+        display: flex;
+        gap: 10px;
+
+        #fprefix {
+            width: 30%;
+        }
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 80%;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.facts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    color: green;
+}
+
+.facts {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    color: black;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-left: 10px solid green;
+    border-right: 10px solid green;
+    margin: 0px 5px;
+}
+
+.contact-method {
+    width: 30%;
+}
+
+.contact-method h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-method p {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.download-banner {
+    left: 200px;
+    top: -25px;
+    border: none;
+    height: 40px;
+    background: #E9CB1B;
+    color: #fff;
+    position: relative;
+    width: 60%;
+    text-align: center;
+    line-height: 40px;
+    text-align: start;
+}
+
+.download-banner:after {
+    content:"";
+    position:absolute;
+    height:0;
+    width:0;
+    left:100%;
+    top:0;
+    border:20px solid transparent;
+    border-left: 20px solid #E9CB1B;
+
+}
+
+.download-banner:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 36px solid #E9CB1B;
+    top: 0px;
+    left: -36px;
+    
+}
+

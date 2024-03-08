@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="../assets/institute-logo.png">
+    </header>
+
+
+    <nav>
+        <div class="navbar">
+            <div class="navbar-title"> <span><img src="../assets/icons/Icon1_19.png"></span>TKI RESEARCH LIBRARY</div>
+
+            <div class="navbar-menu">
+                <a>Log In</a>
+                <hr>
+                <a>Register</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="title">The KPI Dictionary Volume I: Funtional Areas</h1>
+        <div class="subtitle-container">
+            <p>
+                3,200+ Key Performance Indicator Definitions
+                for an in depth view on performance measurement
+            </p>
+        </div>
+        <p class="text-body">
+            <b>The KPI Dictionary - Volume 1</b> is a reference collection of Key Performance Indicators, used in
+            practice today, which covers the major funcional areas
+            of an organization, regardless of its industry especifics. The collection contains the most relevants means
+            for measuring performance, throughout the most
+            common departmens in either public, private or non-profit organizations, such as: Finance, Sales, Human
+            Resources, Marketing and IT.
+        </p>
+
+        <div class="sub-container">
+            <div class="benefits-container">
+                <h2>
+                    <span>
+                        <img src="../assets/icons/Icon1_03.png">
+                    </span>
+                    key benefits of the functional areas kpi dictionary
+                </h2>
+                <div class="list-container">
+                    <ul class="benefits">
+                        <li><span>select</span> - the critical kpis to drive operational success</li>
+                        <li><span>access</span> - afull collection of kpis, specific for each funtional area</li>
+                        <li><span>configure</span> - your own customized departmental scorecard and dashboard</li>
+                        <li><span>improve</span> - your current kpi framework</li>
+                        <li><span>build</span> - your internal kpi library</li>
+                    </ul>
+                    <img src="../assets/icons/Icon1_07.png">
+                </div>
+            </div>
+            <div class="form-container">
+                <p style="text-transform: uppercase; color: green; text-align: center;"><b>Download a free preview</b></p>
+                <p>To proceed with your order, please take a momment to fill in the field bellow.</p>
+                <form action="submit_form.php" method="post" id="form" onsubmit="submitForm(event)">
+                    <input type="text" id="fFirstName" name="firstName" placeholder="First Name" required>
+                    <input type="text" id="fLastName" name="lastName" placeholder="Last Name" required>
+                    <input type="text" id="fcompany" name="company" placeholder="Company">
+                    <select id="fcountry" name="country" onchange="updatePrefix(this.value)">
+                        <option value="-1">Select...</option>
+                    </select>
+                    <div class="phone-container">
+                        <input type="text" id="fprefix" name="prefix" readonly autocomplete="off" required>
+                        <input type="text" id="fphoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+                    </div>
+                    <input type="email" id="femail" name="email" placeholder="Email" required>
+
+                    <p>We value your privacy and will never disclose your data to third parties whiout your consent.</p>
+                    <button type="submit">DOWNLOAD</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="download-banner"><b>DOWNLOAD YOUR PREVIEW</b></div>
+
+    <div class="facts-container">
+
+        <h2>tki facts and figures</h2>
+        <div class="facts">
+            <div class="fact">
+                <img src="../assets/icons/Icon1_11.png">
+                <h3>75,000+</h3>
+                <p>community member</p>
+            </div>
+            <div class="fact">
+                <img src="../assets/icons/Icon1_11.png">
+                <h3>75,000+</h3>
+                <p>community member</p>
+            </div>
+            <div class="fact">
+                <img src="../assets/icons/Icon1_11.png">
+                <h3>75,000+</h3>
+                <p>community member</p>
+            </div>
+            <div class="fact">
+                <img src="../assets/icons/Icon1_11.png">
+                <h3>75,000+</h3>
+                <p>community member</p>
+            </div>
+            <div class="fact">
+                <img src="../assets/icons/Icon1_11.png">
+                <h3>75,000+</h3>
+                <p>community member</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="contact-method">
+                <h4><span><img src="../assets/icons/chatus_btn.png"></span>CHAT WITH US</h4>
+                <p>Have questions? A customer service representative is online to help you via Live Chat. Join in the
+                    conversation.</p>
+            </div>
+            <div class="contact-method">
+                <h4><img src="../assets/icons/callus_btn.png">CALL US</h4>
+                <p>Get in touch with us. For immediate assistance, we're available to take your call at +61 3 9028 2223.
+                </p>
+            </div>
+            <div class="contact-method">
+                <h4><img src="../assets/icons/emailus_btn.png">EMAIL US</h4>
+                <p>We'd love to help. Send us an email at office@kpinstitute.org and a representative will get back to
+                    you.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>
